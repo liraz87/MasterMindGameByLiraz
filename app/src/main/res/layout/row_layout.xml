@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:id="@+id/tries_counter"
+
+        />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/first_point" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/second_point" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/third_point" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/fourth_point" />
+
+    <LinearLayout
+        android:id="@+id/group_Of_Dots"
+        android:layout_width="64dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="64dp">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="64dp"
+            android:layout_height="24dp">
+
+            <View
+                android:id="@+id/v1"
+                android:layout_margin="4dp"
+                android:layout_width="8dp"
+                android:background="@drawable/white_dot"
+                android:layout_height="8dp" />
+
+            <View
+                android:id="@+id/v2"
+                android:layout_margin="4dp"
+                android:layout_width="8dp"
+                android:background="@drawable/white_dot"
+                android:layout_height="8dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="64dp"
+            android:layout_height="24dp">
+
+            <View
+                android:id="@+id/v3"
+                android:layout_width="8dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/white_dot"
+                android:layout_height="8dp" />
+
+            <View
+                android:id="@+id/v4"
+                android:layout_width="8dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/white_dot"
+                android:layout_height="8dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

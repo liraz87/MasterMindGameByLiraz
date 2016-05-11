@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:text="How to play"
+        android:textColor="@color/white"
+        android:textSize="28sp" />
+
+        <TextView
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+
+            android:text="
+- Start a new game by clicking on the 'Play' button.  &#xA; &#xA;
+- If you wish to change the default game parameters, you may change the 'Allow duplicates' and/or sound level fields before you start a new game. &#xA; &#xA;
+- To start filling a line, you must first select a color at the bottom of the screen by clicking on it. &#xA; &#xA;
+- After selecting a color you can just put it in the current guess line above by clicking on the desired position. &#xA; &#xA;
+- Click on the 'Check' button and get the system's response. &#xA; &#xA;
+- After 10 shots, a 'give up' button will appear at the bottom of the screen. You can use this option to expose the secret and finish the game.
+
+Enjoy :)
+
+ " />
+
+</LinearLayout>

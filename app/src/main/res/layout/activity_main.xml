@@ -1,0 +1,48 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="Master Mind"
+        android:textSize="45dp"
+        android:layout_marginBottom="30dp" />
+
+    <TextView
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:background="@drawable/blue_menu_button"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:text="Play"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        android:onClick="play"/>
+
+    <TextView
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:background="@drawable/blue_menu_button"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:text="Instructions"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        android:onClick="btn_instructions_menu"/>
+
+    <TextView
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:background="@drawable/blue_menu_button"
+        android:gravity="center"
+        android:text="Settings"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        android:onClick="btn_settings"/>
+
+    </LinearLayout>

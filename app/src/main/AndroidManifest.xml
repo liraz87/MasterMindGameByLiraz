@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.owner.mymastermindgame">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/mastermind_icon2"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".BoardActivity"
+            android:label="@string/title_activity_board"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <activity
+            android:name=".SettingsActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+
+        <activity
+            android:name=".Instructions"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_insructions"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <activity
+            android:name=".HowToPlay"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+
+
+        <activity
+            android:name=".InstructionsMenu"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+
+    </application>
+
+</manifest>

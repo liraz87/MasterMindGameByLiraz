@@ -1,0 +1,235 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/background_floating_material_dark"
+    android:orientation="vertical"
+    android:id="@+id/main_layout">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:gravity="center"
+        android:id="@+id/general">
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:id="@+id/colored_buttons">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/red_button"
+                android:button="@drawable/red_point"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/blue_button"
+                android:button="@drawable/blue_point"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/yellow_button"
+                android:button="@drawable/yellow_point"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/purple_button"
+                android:button="@drawable/purple_point"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/green_button"
+                android:button="@drawable/green_point"
+                android:layout_marginRight="5dp"
+
+                android:layout_gravity="center"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/aqua_button"
+                android:button="@drawable/aqua_point"
+                android:layout_gravity="center"/>
+
+
+        </RadioGroup>
+        
+
+
+<!--
+    <View
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/red_point"
+        android:id="@+id/red_button"
+        android:onClick="onColorChosen"
+
+        >
+    </View>
+
+    <View
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/blue_point"
+        android:id="@+id/blue_button"
+        android:onClick="onColorChosen"
+      >
+    </View>
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/yellow_point"
+            android:id="@+id/yellow_button"
+            android:onClick="onColorChosen"
+           >
+        </View>
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/purple_point"
+            android:id="@+id/purple_button"
+            android:onClick="onColorChosen"
+          >
+        </View>
+
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/green_point"
+            android:id="@+id/green_button"
+            android:onClick="onColorChosen"
+          >
+        </View>
+
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/aqua_point"
+            android:id="@+id/aqua_button"
+            android:onClick="onColorChosen"
+           >
+        </View>
+!-->
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="73dp"
+        android:paddingRight="20dp"
+        android:id="@+id/line1"
+        >
+
+
+
+    <View
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/blank_point"
+        android:contentDescription=""
+        android:id="@+id/first_dot"
+        android:onClick="onColorSet">
+        </View>
+
+    <View
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/blank_point"
+        android:id="@+id/second_dot"
+        android:onClick="onColorSet">
+    </View>
+
+    <View
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/blank_point"
+        android:id="@+id/third_dot"
+        android:onClick="onColorSet">
+    </View>
+
+    <View
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/blank_point"
+        android:id="@+id/fourth_dot"
+        android:onClick="onColorSet">
+    </View>
+        
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="buttonChk"
+            android:background="@drawable/button_check"
+            android:padding="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/button_check"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="320dp"
+        android:layout_height="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:background="@android:color/white">
+    </View>
+
+
+   
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginLeft="34dp"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:id="@+id/list_item"
+        android:transcriptMode="alwaysScroll">
+        </ListView>
+
+    <Button
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Give up"
+        android:textSize="10sp"
+        android:onClick="buttonGiveUp"
+        android:id="@+id/btn_giveUp"
+        android:visibility="invisible"
+        android:background="@drawable/blue_menu_button"/>
+
+    </LinearLayout>

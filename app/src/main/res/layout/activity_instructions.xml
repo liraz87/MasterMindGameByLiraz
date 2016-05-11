@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:text="Instructions"
+        android:textColor="@color/white"
+        android:textSize="28sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+
+            android:text="
+- The system picks a sequence of colors. &#xA; &#xA;
+- The number of colors is the code length. &#xA; &#xA;
+- The objective of the game is to guess the exact positions of the colors in the system's sequence. &#xA; &#xA;
+- By default, a color can be used only once in a code sequence. &#xA;&#xA;
+- If you start a new game with the 'Allow duplicates' checked, then any color can be used any number of times in the code sequence.&#xA;&#xA;
+- After filling a line with your guesses and clicking on the 'Check' button, the system responses with the result of your guess.&#xA;&#xA;
+- For each color in your guess that is in the correct color and correct position in the code sequence, the system display a small black color on the right side of the current guess.&#xA;&#xA;
+- For each color in your guess that is in the correct color but is NOT in the correct position in the code sequence, the system display a small white color on the right side of the current guess.&#xA;&#xA;
+- You win the game when you manage to guess all the colors in the code sequence and when they all in the right position.&#xA;&#xA;
+Good luck ! "
+/>
+
+    </ScrollView>
+
+</LinearLayout>
